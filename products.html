@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | BuzzBar</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <link href="assets/css/slick-theme.css" rel="stylesheet" />
+
+    <link href="assets/css/globals.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div style="z-index: 1" class="position-relative w-100 h-100 wrapper">
+      <div class="buzzbarBGImage"></div>
+
+      <header
+        class="flex items-center py-4 px-6 lg:px-10 bg-transparent min-h-[70px] relative"
+      >
+        <div class="flex flex-wrap items-center justify-between gap-5 w-full">
+          <a href="index.html"
+            ><img
+              src="assets/imgs/BuzzbarLogo.svg"
+              alt="logo"
+              class="w-[120px] lg:w-[150px]"
+            />
+          </a>
+
+          <div
+            id="collapseMenu"
+            class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+          >
+            <button
+              id="toggleClose"
+              class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 fill-black"
+                viewBox="0 0 320.591 320.591"
+              >
+                <path
+                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                  data-original="#000000"
+                ></path>
+                <path
+                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </button>
+
+            <ul
+              class="lg:flex gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+            >
+              <li class="mb-6 hidden max-lg:block">
+                <a href="index.html"
+                  ><img
+                    src="assets/imgs/BuzzbarLogo.svg"
+                    alt="logo"
+                    class="w-[120px] lg:w-[150px]"
+                  />
+                </a>
+              </li>
+              <li class="max-lg:py-3 px-2">
+                <a href="index.html" class="hover:text-[#a9f766] text-white"
+                  >Home</a
+                >
+              </li>
+              <li class="max-lg:py-3 px-2">
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-[#a9f766] text-white"
+                  >Shop</a
+                >
+              </li>
+              <li class="max-lg:py-3 px-2">
+                <a href="products.html" class="hover:text-[#a9f766] text-white"
+                  >Products</a
+                >
+              </li>
+              <li class="max-lg:py-3 px-2">
+                <a
+                  href="verification.html"
+                  class="hover:text-[#a9f766] text-white"
+                  >Verification</a
+                >
+              </li>
+              <li class="max-lg:py-3 px-2">
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-[#a9f766] text-white"
+                  >Delivery</a
+                >
+              </li>
+              <li class="max-lg:py-3 px-2">
+                <a
+                  href="contact-us.html"
+                  class="hover:text-[#a9f766] text-white"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex max-lg:ml-auto space-x-3">
+            <button type="button" class="hidden lg:block px-1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button
+              class="px-4 py-2 hidden lg:block rounded-full font-semibold text-black bg-[#a9f766] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#a9f766]"
+            >
+              Verify
+            </button>
+
+            <button id="toggleOpen" class="lg:hidden">
+              <svg
+                class="w-7 h-7"
+                fill="#fff"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section class="productsSect relative w-full h-full">
+        <div class="container">
+          <div class="row flex items-center justify-center px-6 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-full">
+              <div class="relative w-full h-full items-center circleLeftPink">
+                <div
+                  class="flex items-center justify-center p-4 circleStar mb-4"
+                >
+                  <img
+                    src="assets/imgs/berryVape.png"
+                    class="img-fluid"
+                    width="250"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="relative w-full flex items-center lg:col-span-1">
+                <div class="flex items-center justify-center circleRightPink">
+                  <div
+                    class="flex flex-col items-start justify-start circleTitlePink"
+                  >
+                    <h1
+                      class="text-5xl lg:text-8xl text-[#FA3BCB] uppercase seriguelaPosterItalic"
+                    >
+                      Berry <span class="text-white">blast</span>
+                    </h1>
+                    <p>
+                      A fusion of mixed berries, Berry Blast packs a punch with
+                      its combination of blueberries, raspberries, and
+                      strawberries. Each puff delivers a medley of flavors, with
+                      the sweet and tart profile of raspberries leading the
+                      charge, complemented by the juicy sweetness of
+                      strawberries and the mild tang of blueberries. The layered
+                      complexity of this flavor keeps it exciting, with a smooth
+                      vapor that fills your senses with a refreshing berry
+                      experience that lingers long after the exhale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="position-relative">
+        <div class="items-center justify-center w-full pinkMagenta">
+          <div class="buzzbarStarSlider" dir="rtl">
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="relative w-full h-full py-10 lg:py-16">
+        <div class="container">
+          <div class="row flex items-center justify-center px-6 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 py-10">
+              <div class="relative w-full flex items-center lg:col-span-1">
+                <div class="flex items-center justify-center megentaSt">
+                  <div
+                    class="flex flex-col items-start justify-start megentaStar"
+                  >
+                    <h1
+                      class="uppercase text-5xl text-[#FE5E7C] lg:text-8xl seriguelaPosterItalic"
+                    >
+                      cherry <span class="text-white">crush</span>
+                    </h1>
+                    <p>
+                      Cherry Crush delivers a powerful burst of sweet and tart
+                      cherries, mimicking the taste of perfectly ripened fruit.
+                      It starts with a bold, juicy flavor that lingers on the
+                      tongue, followed by a slightly sour undertone that gives
+                      the vape a balanced complexity. The smooth vapor makes it
+                      ideal for both all-day use and special occasions, leaving
+                      a refreshing aftertaste with every inhale. It's a must-try
+                      for fruit lovers and those who enjoy a vibrant vaping
+                      experience with a classic twist.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative w-full flex items-center justify-center">
+                <div class="flex items-center justify-center">
+                  <div class="cherryVape flex items-center justify-center">
+                    <img
+                      src="assets/imgs/crus.png"
+                      class="img-fluid"
+                      width="250"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="position-relative">
+        <div class="items-center justify-center w-full pinkYell">
+          <div class="buzzbarStarSlider2" dir="ltr">
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="relative w-full h-full py-10 lg:py-16">
+        <div class="container">
+          <div class="row flex items-center justify-center px-6 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 py-10">
+              <div class="relative w-full flex items-center justify-center">
+                <div class="flex items-center justify-center">
+                  <div class="blissVape flex items-center justify-center">
+                    <img
+                      src="assets/imgs/bananaVape.png"
+                      class="img-fluid"
+                      width="280"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative w-full flex items-center lg:col-span-1">
+                <div class="flex items-center justify-center bananabliss">
+                  <div class="flex flex-col items-start justify-start banbliss">
+                    <h1
+                      class="uppercase text-5xl text-[#FFD900] lg:text-8xl seriguelaPosterItalic"
+                    >
+                      Banana <span class="text-white">bliss</span>
+                    </h1>
+                    <p>
+                      Indulge in the creamy richness of Banana Bliss, a smooth
+                      and satisfying flavor that captures the essence of ripe,
+                      sweet bananas with a velvety texture. The inhale
+                      introduces a burst of banana goodness, reminiscent of
+                      fresh banana slices, while the exhale delivers a subtle
+                      hint of vanilla and cream for a balanced, dessert-like
+                      finish. This flavor is perfect for those who enjoy fruity
+                      vapes with a creamy undertone, offering a mellow yet
+                      flavorful experience that's ideal for both everyday vaping
+                      and a relaxing end to the day.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="position-relative">
+        <div class="items-center justify-center w-full yellowPurpl">
+          <div class="buzzbarStarSlider" dir="rtl">
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="relative w-full h-full py-10 lg:py-16">
+        <div class="container">
+          <div class="row flex items-center justify-center px-6 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 py-10">
+              <div class="relative w-full flex items-center lg:col-span-1">
+                <div class="flex items-center justify-center blueFlower">
+                  <div
+                    class="flex flex-col items-start justify-start blueFlowerBurst"
+                  >
+                    <h1
+                      class="uppercase text-5xl text-[#9747FF] lg:text-8xl seriguelaPosterItalic"
+                    >
+                      Blueberry <span class="text-white">burst</span>
+                    </h1>
+                    <p>
+                      Blueberry Burst is a vibrant flavor that brings the juicy
+                      essence of fresh blueberries to every puff. The vape opens
+                      with a slightly tart, natural blueberry flavor that hits
+                      your taste buds with a burst of fruitiness. As you exhale,
+                      the flavor mellows into a sweeter, more rounded berry
+                      finish, leaving a lasting sensation of summer freshness.
+                      This is an ideal option for fruit enthusiasts who want a
+                      bold, yet balanced, vape experience with a lingering
+                      sweetness.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative w-full flex items-center justify-center">
+                <div class="flex items-center justify-center">
+                  <div class="burstVape flex items-center justify-center">
+                    <img
+                      src="assets/imgs/bluBerBurst.png"
+                      class="img-fluid"
+                      width="280"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="position-relative">
+        <div class="items-center justify-center w-full purpGreen2">
+          <div class="buzzbarStarSlider2" dir="ltr">
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+            <div class="d-flex items-center justify-center mx-3">
+              <img
+                src="assets/imgs/buzzBlackLogo.svg"
+                class="img-fluid w-[100px] mx-3"
+                width="70"
+                alt=""
+              />
+              <img
+                src="assets/imgs/barStar.svg"
+                class="img-fluid d-none d-lg-block"
+                width="50"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="relative w-full h-full py-10 lg:py-16">
+        <div class="container">
+          <div class="row flex items-center justify-center px-6 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 py-10">
+              <div class="relative w-full flex items-center justify-center">
+                <div class="flex items-center justify-center">
+                  <div class="mintFusionVape flex items-center justify-center">
+                    <img
+                      src="assets/imgs/mintVape.png"
+                      class="img-fluid"
+                      width="280"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative w-full flex items-center lg:col-span-1">
+                <div class="flex items-center justify-center mintFusion">
+                  <div class="flex flex-col items-start justify-start mintFus">
+                    <h1
+                      class="uppercase text-5xl text-[#A9F766] lg:text-8xl seriguelaPosterItalic"
+                    >
+                      Mint <span class="text-white">fusion</span>
+                    </h1>
+                    <p>
+                      For those seeking a cool, refreshing vape, Mint Fusion
+                      offers an icy blend of crisp peppermint and smooth
+                      menthol. The flavor starts with a strong hit of mint that
+                      awakens the senses, while the menthol finish adds a
+                      cooling, soothing effect, perfect for hot days or when you
+                      need to unwind. This flavor provides a clean and
+                      invigorating experience with a long-lasting chill that is
+                      great for those who enjoy menthol-based or refreshing
+                      vapes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsLetterSect relative w-full h-full">
+        <div class="flex items-center justify-center my-10 lg:my-16">
+          <div class="flex flex-col items-center justify-center">
+            <h1 class="seriFont uppercase">
+              join our <span class="text-[#a9f766]">newsletter</span>
+            </h1>
+            <p>Sign up for deals, new products and promotions</p>
+
+            <div class="col-lg-10 flex items-center justify-center my-4">
+              <div class="input-group heroInputGroup">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="heroInput form-control"
+                />
+                <button
+                  type="button"
+                  class="btn bg-[#a9f766] text-black font-semibold py-1 px-2"
+                >
+                  Verify Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="relative w-full h-full">
+        <div class="container">
+          <div class="row flex items-center justify-center my-4">
+            <div
+              class="relative flex flex items-center justify-between px-10 lg:px-20"
+            >
+              <div class="flex items-start justify-start">
+                <a href="index.html">
+                  <img
+                    src="assets/imgs/BuzzbarLogo.svg"
+                    class="img-fluid lg:w-[150px]"
+                    width="120"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div
+                class="relative flex flex items-start justify-start lg:items-end lg:justify-end"
+              >
+                <ul class="flex items-center footLinks">
+                  <li class="flex items-center justify-center">
+                    <a href="index.html" class="m-2">Home</a>
+                  </li>
+                  <li class="flex items-center justify-center">
+                    <a href="#" class="m-2">Shop</a>
+                  </li>
+                  <li class="flex items-center justify-center">
+                    <a href="#" class="m-2">Delivery</a>
+                  </li>
+                  <li class="flex items-center justify-center">
+                    <a href="verification.html" class="m-2">Verification</a>
+                  </li>
+                  <li class="flex items-center justify-center">
+                    <a href="products.html" class="m-2">Products</a>
+                  </li>
+
+                  <li class="flex items-center justify-center">
+                    <a href="#" class="m-2">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row flex items-center justify-center my-4">
+            <div class="relative flex items-start justify-start px-10 lg:px-20">
+              <div class="flex items-start lg:mr-6">
+                <p>© Copyright 2024 BuzzBar. All Rights Reserved</p>
+              </div>
+
+              <div class="flex items-start">
+                <a href="#" class="mx-3">Privacy Policy</a>
+                <a href="#" class="">Terms of Use</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

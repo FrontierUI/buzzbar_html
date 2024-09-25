@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: 'Seriguela-Poster-Medium';
+  src: url('/assets/fonts/Seriguela-Medium.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Seriguela-Poster-ReverseItalic';
   src: url('/assets/fonts/Seriguela-PosterRevIt.woff2') format('woff2');
 }
@@ -54,27 +59,57 @@ a {
   font-family: 'Seriguela-Poster-Italic';
 }
 
+.seriguelaPosterMedium {
+  font-family: 'Seriguela-Poster-Medium';
+  font-style: italic;
+}
+
 .seriguelaPosterRevItalic {
   font-family: 'Seriguela-Poster-ReverseItalic';
+}
+
+.seriFont {
+  font-family: 'Seriguela-Poster-Italic';
+  font-size: 7rem;
+}
+
+.lineHeight {
+  line-height: 0.6;
 }
 
 .megentaColor {
   color: #ff69da;
 }
 
+.vorLine {
+  width: 1px !important;
+  height: 80px !important;
+  background: #000 !important;
+  opacity: 1;
+}
+
+.vertLine {
+  width: 1px !important;
+  height: 400px !important;
+  background: #fff !important;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+}
+
 .buzzBar-heroSection {
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
-.buzzHeroVid {
+.buzzVideo {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  top: -5.5rem;
+  z-index: -1;
 }
+
+/* A9F766 a9f766 */
 
 .aboutUs {
   position: relative;
@@ -99,3 +134,733 @@ a {
   background-size: cover;
   z-index: -1;
 }
+
+.bgYellowPink {
+  background: linear-gradient(to right, #a9f766 0%, #ff69da 100%);
+  transform: rotate(-01.5deg);
+  position: absolute;
+  bottom: 0;
+}
+
+.purpBlue {
+  background: linear-gradient(to right, #9747ff 0%, #00ffeb 100%);
+  transform: rotate(02deg);
+  position: absolute;
+  bottom: 1rem;
+}
+
+.purpGreen {
+  background: linear-gradient(to right, #9747ff 0%, #a9f766 100%);
+  transform: rotate(02deg);
+  position: absolute;
+  bottom: 0;
+}
+
+.pinkMagenta {
+  background: linear-gradient(to right, #ff69da 0%, #fe5e7c 100%);
+  transform: rotate(02deg);
+  position: absolute;
+  bottom: -2rem;
+}
+
+.pinkYell {
+  background: linear-gradient(to right, #fe5e7c 0%, #ffd900 100%);
+  transform: rotate(-01.5deg);
+  position: absolute;
+  bottom: -2rem;
+}
+
+.yellowPurpl {
+  background: linear-gradient(to right, #ffd900 0%, #9747ff 100%);
+  transform: rotate(02deg);
+  position: absolute;
+  bottom: -2rem;
+}
+
+.purpGreen2 {
+  background: linear-gradient(to right, #9747ff 0%, #a9f766 100%);
+  transform: rotate(-01.5deg);
+  position: absolute;
+  bottom: -2rem;
+}
+
+.pinkGreen {
+  background: linear-gradient(to right, #fe5e7c 0%, #a9f766 100%);
+  transform: rotate(02deg);
+  position: absolute;
+  bottom: 0;
+}
+
+.gradPink {
+  position: relative;
+}
+
+.gradPink::before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+  background-image: url('/assets/imgs/pinkshadoww.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bigStar {
+  position: relative;
+}
+
+.bigStar::before {
+  position: absolute;
+  content: '';
+  width: 170px;
+  height: 170px;
+  top: 0;
+  left: 0;
+  background-image: url('/assets/imgs/pinkStar.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.pinkVapeImg {
+  position: relative;
+}
+
+.pinkVapeImg::before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/pinkStar.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.pinkVapeImg::after {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/pinkshadoww.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.yellowVapeImg {
+  position: relative;
+}
+
+.yellowVapeImg::before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/yellowstar.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.yellowVapeImg::after {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/yellowglow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.greenVapeImg {
+  position: relative;
+}
+
+.greenVapeImg::before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/greenstar.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.greenVapeImg::after {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/greenglow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.yellowTimer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.yellowBGImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/imgs/YellowBG.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.timerLeftImg {
+  position: relative;
+}
+
+.timerLeftImg::before {
+  position: absolute;
+  content: '';
+  width: 350px;
+  height: 350px;
+  background-image: url('/assets/imgs/4petals.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.communityEvents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.comEventsBgImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/imgs/Communityevents.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* smPosts Section start */
+
+.smPosts {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.smPostsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.smPostsContent hr {
+  width: 100px;
+  opacity: 0.5;
+}
+
+.smPostsContent h2 {
+  letter-spacing: 5px;
+  font-weight: 700 !important;
+  line-height: 1;
+  font-size: 3rem;
+}
+.smPostsContent h5 {
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.followBtn {
+  padding: 10px 30px;
+  background: #202020;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.followBtn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.postContent {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.smPostImg {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(25, 25, 26, 0.9);
+  border-radius: 10px;
+}
+
+.postContent:hover .overlay {
+  opacity: 1;
+}
+
+.postActivism {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.postActivism img {
+  width: 25px;
+}
+
+.postActivism p {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.postActivism span {
+  margin-left: 5px;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.textGrad {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #c535ad 0%,
+    #4366c9 25%,
+    #f9514a 50%,
+    #ffd854 75%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* smPosts Section end */
+
+.heroInput {
+  color: #fff;
+  background: #8f8f8f52;
+  border: none;
+  padding: 8px 20px;
+}
+
+.productsSect {
+  position: relative;
+}
+
+.circleLeftPink {
+  position: relative;
+}
+
+.circleLeftPink::before {
+  position: absolute;
+  content: '';
+  top: 1.5rem;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url('/assets/imgs/circularSt.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.circleRightPink {
+  position: relative;
+}
+
+.circleRightPink::before {
+  position: absolute;
+  content: '';
+  bottom: -6rem;
+  right: 2rem;
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/imgs/circularSt.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.circleStar {
+  position: relative;
+}
+
+.circleStar::before {
+  position: absolute;
+  content: '';
+  width: 350px;
+  height: 350px;
+  background-image: url('/assets/imgs/circularSt.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.circleTitlePink {
+  position: relative;
+}
+
+.circleTitlePink::before {
+  position: absolute;
+  content: '';
+  right: 42%;
+  top: 3.5rem;
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/imgs/circularSt.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.cirAnimStar {
+  position: absolute;
+  top: 3rem;
+  left: 6rem;
+}
+
+.circleAnimStar {
+  position: absolute;
+  bottom: 3rem;
+  right: 4rem;
+}
+
+.cirHorAnim {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+}
+
+.megentaSt {
+  position: relative;
+}
+
+.megentaSt::before {
+  position: absolute;
+  content: '';
+  top: -5rem;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url('/assets/imgs/pinkStar.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.megentaStar {
+  position: relative;
+}
+
+.megentaStar::before {
+  position: absolute;
+  content: '';
+  bottom: -7rem;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('/assets/imgs/pinkStar.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.cherryVape {
+  position: relative;
+}
+
+.cherryVape::before {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/imgs/pinkStar.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.blissVape {
+  position: relative;
+}
+
+.blissVape::before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/bananabliss.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bananabliss {
+  position: relative;
+}
+
+.bananabliss::before {
+  position: absolute;
+  content: '';
+  top: -7rem;
+  width: 100px;
+  height: 100px;
+  background-image: url('/assets/imgs/bananabliss.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.banbliss {
+  position: relative;
+}
+
+.banbliss::before {
+  position: absolute;
+  content: '';
+  bottom: -8rem;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url('/assets/imgs/bananabliss.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.burstVape {
+  position: relative;
+}
+
+.burstVape::before {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/imgs/purpleflower.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.burstVape {
+  position: relative;
+}
+
+.burstVape::before {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/imgs/purpleflower.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.blueFlower {
+  position: relative;
+}
+
+.blueFlower::before {
+  position: absolute;
+  content: '';
+  top: -6rem;
+  right: 30%;
+  width: 60px;
+  height: 60px;
+  background-image: url('/assets/imgs/purpleflower.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.blueFlowerBurst {
+  position: relative;
+}
+
+.blueFlowerBurst::before {
+  position: absolute;
+  content: '';
+  bottom: -8rem;
+  width: 100px;
+  height: 100px;
+  background-image: url('/assets/imgs/purpleflower.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.mintFusionVape {
+  position: relative;
+}
+
+.mintFusionVape::before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-image: url('/assets/imgs/greenshuriken.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.mintFusion {
+  position: relative;
+}
+
+.mintFusion::before {
+  position: absolute;
+  content: '';
+  top: -7rem;
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/imgs/greenshuriken.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.mintFus {
+  position: relative;
+}
+
+.mintFus::before {
+  position: absolute;
+  content: '';
+  bottom: -6rem;
+  width: 50px;
+  height: 50px;
+  background-image: url('/assets/imgs/greenshuriken.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.leftSideCont-up h4 {
+  color: #fff;
+}
+
+.formFields label {
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.formFields input {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fe5e7c !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.formFields input:focus,
+.formFields input:focus-visible,
+.formFields input:visited {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fe5e7c !important;
+}
+
+.heroInput input:focus,
+.heroInput input:focus-visible,
+.heroInput input:visited {
+  background: transparent;
+  color: #fff;
+}
+
+.formFields input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.textArea label {
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.textArea textarea {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fe5e7c !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.textArea textarea:focus,
+textarea:focus-visible,
+textarea:visited {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fe5e7c !important;
+}
+
+.textArea textarea::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+/* formSection section end */
