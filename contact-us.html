@@ -28,6 +28,7 @@
     <link href="assets/css/slick-theme.css" rel="stylesheet" />
 
     <link href="assets/css/globals.css" rel="stylesheet" />
+    <link href="assets/css/deviceResponsive.css" rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -508,11 +509,13 @@
 
       <section class="newsLetterSect relative w-full h-full">
         <div class="flex items-center justify-center my-10 lg:my-16">
-          <div class="flex flex-col items-center justify-center">
-            <h1 class="seriFont uppercase">
+          <div class="flex flex-col items-center justify-center px-6">
+            <h1 class="seriFont uppercase text-center">
               join our <span class="text-[#a9f766]">newsletter</span>
             </h1>
-            <p>Sign up for deals, new products and promotions</p>
+            <p class="text-center">
+              Sign up for deals, new products and promotions
+            </p>
 
             <div class="col-lg-10 flex items-center justify-center my-4">
               <div class="input-group heroInputGroup">
@@ -535,9 +538,9 @@
 
       <footer class="relative w-full h-full">
         <div class="container">
-          <div class="row flex items-center justify-center my-4">
+          <div class="row flex items-center justify-center">
             <div
-              class="relative flex flex items-center justify-between px-10 lg:px-20"
+              class="relative flex flexColumn items-start lg:justify-between py-2 px-6 lg:px-10"
             >
               <div class="flex items-start justify-start">
                 <a href="index.html">
@@ -550,7 +553,7 @@
                 </a>
               </div>
               <div
-                class="relative flex flex items-start justify-start lg:items-end lg:justify-end"
+                class="relative flex items-start justify-start lg:items-end lg:justify-end"
               >
                 <ul class="flex items-center footLinks">
                   <li class="flex items-center justify-center">
@@ -577,9 +580,11 @@
             </div>
           </div>
 
-          <div class="row flex items-center justify-center my-4">
-            <div class="relative flex items-start justify-start px-10 lg:px-20">
-              <div class="flex items-start lg:mr-6">
+          <div class="row flex items-center justify-center mb-3">
+            <div
+              class="relative flex items-start flexColumn justify-start py-2 px-6 lg:px-10"
+            >
+              <div class="flex items-start xs:py-2 lg:mr-6">
                 <p>© Copyright 2024 BuzzBar. All Rights Reserved</p>
               </div>
 

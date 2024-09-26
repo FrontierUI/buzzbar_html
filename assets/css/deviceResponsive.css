@@ -1,0 +1,130 @@
+@media screen and (max-width: 575px) {
+  .cirAnimStar,
+  .circleAnimStar,
+  .circleTitlePink,
+  .circleRightPink,
+  .cirHorAnim {
+    display: none !important;
+  }
+
+  .seriFont {
+    font-size: 4rem;
+  }
+
+  .megentaSt::before {
+    top: -3rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .megentaStar::before {
+    width: 70px;
+    height: 70px;
+    bottom: -4rem;
+    right: 3rem;
+  }
+
+  .circleStar img {
+    width: 300px;
+  }
+
+  .circleStar::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .blissVape::before {
+    width: 300px;
+    height: 300px;
+  }
+  .timerLeftImg::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .cherryVape::before {
+    width: 250px;
+    height: 250px;
+  }
+  .mintFusionVape::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .mintFusion::before {
+    display: none;
+  }
+
+  .mintFus::before {
+    display: none;
+  }
+
+  .bananabliss::before {
+    width: 60px;
+    height: 60px;
+    right: 3.5rem;
+    top: -0.3rem;
+  }
+
+  .banbliss::before {
+    display: none;
+  }
+
+  .blueFlower::before {
+    width: 40px;
+    height: 40px;
+    right: 2rem;
+    top: 0;
+  }
+
+  .burstVape::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .blueFlowerBurst::before {
+    display: none;
+  }
+
+  .buzz-slides {
+    height: 100% !important;
+  }
+
+  .buzz-slides h1 {
+    font-size: 4rem !important;
+  }
+
+  .buzz-slides img {
+    width: 90% !important;
+    margin-top: 0 !important;
+  }
+
+  .stylePort {
+    height: 100% !important;
+  }
+
+  .pinkVapeImg::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .yellowVapeImg::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .greenVapeImg::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .footLinks {
+    flex-direction: column;
+    margin-top: 0.75rem;
+    align-items: start !important;
+  }
+
+  .flexColumn {
+    flex-direction: column;
+  }
+}

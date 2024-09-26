@@ -62,7 +62,7 @@ $(function () {
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
-    dots: true,
+    dots: false,
     autoplay: true,
     autoplaySpeed: 5000,
   });

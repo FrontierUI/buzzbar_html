@@ -823,9 +823,9 @@ a {
   border: 1px solid #fe5e7c !important;
 }
 
-.heroInput input:focus,
-.heroInput input:focus-visible,
-.heroInput input:visited {
+.heroInput:focus,
+.heroInput:focus-visible,
+.heroInput:visited {
   background: transparent;
   color: #fff;
 }

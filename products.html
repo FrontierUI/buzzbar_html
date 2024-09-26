@@ -28,6 +28,7 @@
     <link href="assets/css/slick-theme.css" rel="stylesheet" />
 
     <link href="assets/css/globals.css" rel="stylesheet" />
+    <link href="assets/css/deviceResponsive.css" rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -160,7 +161,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-full">
               <div class="relative w-full h-full items-center circleLeftPink">
                 <div
-                  class="flex items-center justify-center p-4 circleStar mb-4"
+                  class="flex items-center justify-center p-12 circleStar mb-4"
                 >
                   <img
                     src="assets/imgs/berryVape.png"
@@ -174,7 +175,7 @@
               <div class="relative w-full flex items-center lg:col-span-1">
                 <div class="flex items-center justify-center circleRightPink">
                   <div
-                    class="flex flex-col items-start justify-start circleTitlePink"
+                    class="flex flex-col items-start justify-start circleTitlePink p-3"
                   >
                     <h1
                       class="text-5xl lg:text-8xl text-[#FA3BCB] uppercase seriguelaPosterItalic"
@@ -424,7 +425,7 @@
               <div class="relative w-full flex items-center lg:col-span-1">
                 <div class="flex items-center justify-center megentaSt">
                   <div
-                    class="flex flex-col items-start justify-start megentaStar"
+                    class="flex flex-col items-start justify-start megentaStar p-3"
                   >
                     <h1
                       class="uppercase text-5xl text-[#FE5E7C] lg:text-8xl seriguelaPosterItalic"
@@ -686,7 +687,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 py-10">
               <div class="relative w-full flex items-center justify-center">
                 <div class="flex items-center justify-center">
-                  <div class="blissVape flex items-center justify-center">
+                  <div class="blissVape flex items-center justify-center p-12">
                     <img
                       src="assets/imgs/bananaVape.png"
                       class="img-fluid"
@@ -699,7 +700,9 @@
 
               <div class="relative w-full flex items-center lg:col-span-1">
                 <div class="flex items-center justify-center bananabliss">
-                  <div class="flex flex-col items-start justify-start banbliss">
+                  <div
+                    class="flex flex-col items-start justify-start banbliss p-3"
+                  >
                     <h1
                       class="uppercase text-5xl text-[#FFD900] lg:text-8xl seriguelaPosterItalic"
                     >
@@ -949,7 +952,7 @@
               <div class="relative w-full flex items-center lg:col-span-1">
                 <div class="flex items-center justify-center blueFlower">
                   <div
-                    class="flex flex-col items-start justify-start blueFlowerBurst"
+                    class="flex flex-col items-start justify-start blueFlowerBurst p-3"
                   >
                     <h1
                       class="uppercase text-5xl text-[#9747FF] lg:text-8xl seriguelaPosterItalic"
@@ -1226,7 +1229,7 @@
                 <div class="flex items-center justify-center mintFusion">
                   <div class="flex flex-col items-start justify-start mintFus">
                     <h1
-                      class="uppercase text-5xl text-[#A9F766] lg:text-8xl seriguelaPosterItalic"
+                      class="uppercase text-5xl text-[#A9F766] lg:text-8xl seriguelaPosterItalic p-3"
                     >
                       Mint <span class="text-white">fusion</span>
                     </h1>
@@ -1251,11 +1254,13 @@
 
       <section class="newsLetterSect relative w-full h-full">
         <div class="flex items-center justify-center my-10 lg:my-16">
-          <div class="flex flex-col items-center justify-center">
-            <h1 class="seriFont uppercase">
+          <div class="flex flex-col items-center justify-center px-6">
+            <h1 class="seriFont uppercase text-center">
               join our <span class="text-[#a9f766]">newsletter</span>
             </h1>
-            <p>Sign up for deals, new products and promotions</p>
+            <p class="text-center">
+              Sign up for deals, new products and promotions
+            </p>
 
             <div class="col-lg-10 flex items-center justify-center my-4">
               <div class="input-group heroInputGroup">
@@ -1278,9 +1283,9 @@
 
       <footer class="relative w-full h-full">
         <div class="container">
-          <div class="row flex items-center justify-center my-4">
+          <div class="row flex items-center justify-center">
             <div
-              class="relative flex flex items-center justify-between px-10 lg:px-20"
+              class="relative flex flexColumn items-start lg:justify-between py-2 px-6 lg:px-10"
             >
               <div class="flex items-start justify-start">
                 <a href="index.html">
@@ -1293,7 +1298,7 @@
                 </a>
               </div>
               <div
-                class="relative flex flex items-start justify-start lg:items-end lg:justify-end"
+                class="relative flex items-start justify-start lg:items-end lg:justify-end"
               >
                 <ul class="flex items-center footLinks">
                   <li class="flex items-center justify-center">
@@ -1320,9 +1325,11 @@
             </div>
           </div>
 
-          <div class="row flex items-center justify-center my-4">
-            <div class="relative flex items-start justify-start px-10 lg:px-20">
-              <div class="flex items-start lg:mr-6">
+          <div class="row flex items-center justify-center mb-3">
+            <div
+              class="relative flex items-start flexColumn justify-start py-2 px-6 lg:px-10"
+            >
+              <div class="flex items-start xs:py-2 lg:mr-6">
                 <p>© Copyright 2024 BuzzBar. All Rights Reserved</p>
               </div>
 
